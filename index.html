@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game">
+      <div id="player">
+        <p id="PPP">Player choice:</p>
+        <button id="humanRock" class="choiceHum choice">Rock</button>
+        <button id="humanPaper" class="choiceHum choice">Paper</button>
+        <button id="humanScissors" class="choiceHum choice">Scissors</button>
+      </div>
+      <div id="computer">
+        Computer choice:
+        <div id="computerRock" class="choiceComp choice hidden">Rock</div>
+        <div id="computerPaper" class="choiceComp choice hidden">Paper</div>
+        <div id="computerScissors" class="choiceComp choice hidden">
+          Scissors
+        </div>
+      </div>
+    </div>
+
+    <div id="score">
+      <div id="human" class="scores">
+        <h3>Player</h3>
+        <p id="humanScore">0</p>
+      </div>
+      <div id="comp" class="scores">
+        <h3>Computer</h3>
+        <p id="compScore">0</p>
+      </div>
+      <div id="draw" class="scores">
+        <h3>Draws</h3>
+        <p id="draws">0</p>
+      </div>
+    </div>
+    <div id="winner" class="hidden winner">
+      <h1 id="humanWin" class="centre">You win!</h1>
+      <h1 id="compWin" class="centre">You lose:</h1>
+      <button id="play" class="centre play">Play again?</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
